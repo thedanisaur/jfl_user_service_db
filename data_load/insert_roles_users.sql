@@ -40,8 +40,8 @@ SELECT
     , r.id
     , u.id
 FROM roles r
-JOIN users u ON u.email = 'swat@jfl.com'
-WHERE r.name = 'site_admin';
+JOIN users u ON u.email = 'sarm@jfl.com'
+WHERE r.name = 'squadron_arm';
 
 INSERT INTO roles_users (id, role_id, user_id)
 SELECT

@@ -18,6 +18,7 @@ AS
         , u.status
         , u.is_instructor
         , u.is_evaluator
+        , r.name
         , r.displayname
         , u.created_on
         , u.updated_on

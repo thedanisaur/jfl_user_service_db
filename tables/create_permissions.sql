@@ -1,6 +1,6 @@
 CREATE TABLE permissions (
       id BINARY(16) PRIMARY KEY
-    , role_id BINARY(16) NOT NULL
+    , role_name VARCHAR(255) NOT NULL
     , resource VARCHAR(255) NOT NULL
     , operation ENUM('create', 'read', 'update', 'delete') NOT NULL
     , effect ENUM('allow', 'deny') NOT NULL
@@ -9,11 +9,7 @@ CREATE TABLE permissions (
     , created_on DATETIME NOT NULL
     , updated_on DATETIME NOT NULL
 
-    , UNIQUE (role_id, resource, operation)
-
-    , CONSTRAINT permissions_role_id_fkey FOREIGN KEY (role_id)
-        REFERENCES roles (id) MATCH SIMPLE
-        ON UPDATE NO ACTION ON DELETE NO ACTION
+    , UNIQUE (role_name, resource, operation)
 );
 
 DROP TRIGGER IF EXISTS bi_permissions;

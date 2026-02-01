@@ -86,10 +86,10 @@ INSERT INTO users (id, email, password_hash, first_name, last_name, call_sign, p
 VALUES
 (
     UUID_TO_BIN(UUID())
-    , 'swat@jfl.com'
+    , 'sarm@jfl.com'
     , '$2a$12$6LM/qJPH8r5J6W5Xd0.A.eUqOpS3zcd8zUlh.43iGGpw1AwYMvQ4u'
     , 'SWAT'
-    , 'Admin'
+    , 'SARM'
     , 'SWAT'
     , 'ALL'
     , ''
