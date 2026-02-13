@@ -24,3 +24,13 @@ INSERT INTO permissions (role_name, resource, operation, effect, cond_type, cond
 VALUES ('instructor', 'users', 'update', 'allow', 'cel', 'true');
 INSERT INTO permissions (role_name, resource, operation, effect, cond_type, cond_expr)
 VALUES ('instructor', 'users', 'delete', 'allow', 'cel', 'true');
+
+/* squadron arm */
+INSERT INTO permissions (role_name, resource, operation, effect, cond_type, cond_expr)
+VALUES ('squadron_arm', 'users', 'create', 'allow', 'cel', 'true');
+INSERT INTO permissions (role_name, resource, operation, effect, cond_type, cond_expr)
+VALUES ('squadron_arm', 'users', 'read', 'allow', 'cel', 'true');
+INSERT INTO permissions (role_name, resource, operation, effect, cond_type, cond_expr)
+VALUES ('squadron_arm', 'users', 'update', 'allow', 'cel', 'true');
+INSERT INTO permissions (role_name, resource, operation, effect, cond_type, cond_expr)
+VALUES ('squadron_arm', 'users', 'delete', 'allow', 'cel', 'true');
